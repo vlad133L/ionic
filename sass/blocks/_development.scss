@@ -1,10 +1,6 @@
-.development {
+.dev {
 	padding: 64px 0 200px;
 }
-
-.dev {}
-
-.container {}
 
 .dev__row {
 	@include flex(space-between, center);

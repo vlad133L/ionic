@@ -1,0 +1,7 @@
+.partners {
+	margin-bottom: 240px;
+}
+
+.partners__list {
+	@include flex(space-between, center);
+}
