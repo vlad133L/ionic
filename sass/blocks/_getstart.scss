@@ -1,20 +1,24 @@
 .getstart {
 	padding-top: 81px;
 
+	&__bg {
+		background-image: url('./../img/bg.png');
+		background-repeat: no-repeat;
+		min-height: 1226px;
+		background-size: contain;
+		background-position: 0 -84px;
+		position: relative;
+
+	}
+
 }
 
-.container-getstart {
-	background-image: url('./../img/bg.png');
-	background-repeat: no-repeat;
-	min-height: 1194px;
-	background-size: cover;
-}
 
 .getstart__title {
 	font-weight: 700;
 	font-size: 88px;
 	letter-spacing: 1.92px;
-	color: #03060B;
+	color: $bigtext;
 	margin-bottom: 66px;
 	max-width: 707px;
 }
@@ -62,9 +66,14 @@
 	font-weight: 700;
 	font-size: 13px;
 	letter-spacing: 0.28px;
-	color: #3880FF;
+	color: $btntext;
 	position: relative;
 	padding-right: 14px;
+	transition: color 0.2s ease-in;
+
+	&:hover {
+		color: darken($btntext, 20%);
+	}
 
 	&::after {
 		content: "";
