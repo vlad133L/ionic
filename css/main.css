@@ -125,6 +125,14 @@ h6 {
   font-weight: inherit;
 }
 
+.title {
+  font-size: 13px;
+  letter-spacing: 2.24px;
+  text-transform: uppercase;
+  color: #92A0B3;
+  margin-bottom: 25px;
+}
+
 /*--------------------*/
 .register {
   padding: 28px 0;
@@ -378,14 +386,6 @@ h6 {
   max-width: 473px;
 }
 
-.overview__title {
-  font-size: 13px;
-  letter-spacing: 2.24px;
-  text-transform: uppercase;
-  color: #92A0B3;
-  margin-bottom: 25px;
-}
-
 .overview__subtitle {
   font-weight: 700;
   font-size: 63px;
@@ -500,6 +500,81 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.approach {
+  padding-bottom: 240px;
+}
+
+.text {
+  margin-bottom: 76px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-right: 20px;
+}
+
+.text__titles {
+  max-width: 329px;
+}
+
+.approach__subtitle {
+  font-weight: 700;
+  font-size: 61px;
+  line-height: 1.05;
+  letter-spacing: 0.64px;
+  color: #03060B;
+}
+
+.text__desc {
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.16px;
+  color: #445B78;
+  max-width: 428px;
+}
+
+.approach__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.approach__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 32%;
+          flex: 0 1 32%;
+  background: #F6F8FC;
+  border-radius: 16px;
+  padding: 40px 39px 36px 32px;
+}
+
+.approach__pic {
+  margin-bottom: 63px;
+}
+
+.approach__title {
+  margin-bottom: 18px;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  color: #03060B;
+}
+
+.approach__desc {
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.16px;
+  color: #445B78;
 }
 
 /*# sourceMappingURL=main.css.map */

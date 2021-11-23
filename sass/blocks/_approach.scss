@@ -1,0 +1,62 @@
+.approach {
+	padding-bottom: 240px;
+}
+
+.text {
+	margin-bottom: 76px;
+	@include flex(space-between, flex-end);
+	padding-right: 20px;
+}
+
+.text__titles {
+	max-width: 329px;
+}
+
+.approach__subtitle {
+	font-weight: 700;
+	font-size: 61px;
+	line-height: 1.05;
+	letter-spacing: 0.64px;
+	color: $bigtext;
+}
+
+.text__desc {
+	font-size: 16px;
+	line-height: 1.6;
+	letter-spacing: 0.16px;
+	color: $accent;
+	max-width: 428px;
+}
+
+// Items (FLEX)
+
+.approach__items {
+	display: flex;
+	justify-content: space-between;
+}
+
+.approach__item {
+	flex: 0 1 32%;
+	background: #F6F8FC;
+	border-radius: 16px;
+	padding: 40px 39px 36px 32px;
+}
+
+.approach__pic {
+	margin-bottom: 63px;
+}
+
+.approach__title {
+	margin-bottom: 18px;
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: 0.2px;
+	color: $bigtext;
+}
+
+.approach__desc {
+	font-size: 16px;
+	line-height: 1.6;
+	letter-spacing: 0.16px;
+	color: $accent;
+}
