@@ -107,7 +107,7 @@
 	&__start {
 		font-size: 13px;
 		color: $white;
-		background-color: #1B6DFF;
+		background-color: $btn;
 		border-radius: 1000px;
 		padding: 8px 11px 11px 12px;
 		position: relative;
@@ -116,7 +116,7 @@
 		transition: background-color 0.2s ease-in;
 
 		&:hover {
-			background-color: darken(#1B6DFF, 10%);
+			background-color: darken($btn, 10%);
 		}
 
 		&::after {

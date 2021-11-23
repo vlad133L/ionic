@@ -1,0 +1,79 @@
+.getstart {
+	padding-top: 81px;
+
+}
+
+.container-getstart {
+	background-image: url('./../img/bg.png');
+	background-repeat: no-repeat;
+	min-height: 1194px;
+	background-size: cover;
+}
+
+.getstart__title {
+	font-weight: 700;
+	font-size: 88px;
+	letter-spacing: 1.92px;
+	color: #03060B;
+	margin-bottom: 66px;
+	max-width: 707px;
+}
+
+.getstart__desc {
+	font-size: 20px;
+	line-height: 1.6;
+	letter-spacing: 0.2px;
+	color: $accent;
+	max-width: 584px;
+	margin-bottom: 43px;
+}
+
+.getstart__buttons {
+	display: flex;
+	align-items: center;
+}
+
+.btn--1 {
+	margin-right: 21px;
+	background-color: $btn;
+	border-radius: 1000px;
+	color: $white;
+	transition: background-color 0.2s ease-in;
+	padding: 1px 31px 4px 20px;
+	position: relative;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 5px;
+		right: 11px;
+		width: 13px;
+		height: 13px;
+		background-image: url('./../img/icons/arrowstart.svg');
+		background-repeat: no-repeat;
+	}
+
+	&:hover {
+		background-color: darken($btn, 10%);
+	}
+}
+
+.btn--2 {
+	font-weight: 700;
+	font-size: 13px;
+	letter-spacing: 0.28px;
+	color: #3880FF;
+	position: relative;
+	padding-right: 14px;
+
+	&::after {
+		content: "";
+		position: absolute;
+		top: 3px;
+		right: 0;
+		width: 13px;
+		height: 13px;
+		background-image: url('./../img/icons/arrow.svg');
+		background-repeat: no-repeat;
+	}
+}
