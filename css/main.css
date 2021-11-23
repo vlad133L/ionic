@@ -577,4 +577,107 @@ h6 {
   color: #445B78;
 }
 
+.case__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.case__text {
+  max-width: 448px;
+}
+
+.case__subtitle {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.07;
+  letter-spacing: 0.64px;
+  color: #03060B;
+  margin-bottom: 34px;
+}
+
+.case__desc {
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.16px;
+  color: #445B78;
+  margin-bottom: 33px;
+}
+
+.case__apps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.case__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.item {
+  border-radius: 32px;
+  max-width: 544px;
+  background-image: url("./../img/apps/casebg.jpg");
+  background-repeat: no-repeat;
+  min-height: 480px;
+}
+
+.item__logo {
+  margin-bottom: 26px;
+}
+
+.item__content {
+  padding: 221px 58px 48px 48px;
+}
+
+.item__desc {
+  margin-bottom: 36px;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.16px;
+  color: #ffffff;
+}
+
+.item__link {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1000px;
+  font-size: 12px;
+  line-height: 1.08;
+  color: #ffffff;
+  min-height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 195px;
+  padding-left: 12px;
+  position: relative;
+  -webkit-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
+}
+.item__link:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.item__link::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  top: 13px;
+  right: 16px;
+  background-image: url("./../img/icons/arrowstart.svg");
+  background-repeat: no-repeat;
+}
+
 /*# sourceMappingURL=main.css.map */
