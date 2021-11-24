@@ -1,0 +1,57 @@
+.ebook {
+	margin-bottom: 295px;
+
+}
+
+.ebook__row {
+	@include flex(space-between, center);
+}
+
+.ebook__read {
+	padding: 36px 0 0 64px;
+	height: 376px;
+	background: #FBFBFD;
+}
+
+.ebook__desc {
+
+	font-size: 32px;
+	line-height: 1.12;
+	color: $bigtext;
+
+	span {
+		font-weight: 700;
+	}
+
+	margin-bottom: 86px;
+}
+
+.ebook__btn {
+	font-size: 12px;
+	line-height: 14px;
+	letter-spacing: 0.28px;
+	color: $btntext;
+	position: relative;
+	padding-right: 17px;
+	transition: color 0.2s ease-in;
+
+	&:hover {
+		color: darken($btntext, 20%);
+	}
+
+	&:hover::after {
+		right: -5px;
+	}
+
+	&::after {
+		transition: right 0.2s ease-in;
+		content: "";
+		position: absolute;
+		top: 3px;
+		right: 0;
+		width: 13px;
+		height: 13px;
+		background-image: url('./../img/icons/arrow.svg');
+		background-repeat: no-repeat;
+	}
+}
