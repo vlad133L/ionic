@@ -1,0 +1,34 @@
+.top {
+	padding: 138px 0 71px;
+}
+
+.top__row {
+	@include flex(space-between, flex-start);
+}
+
+.top__list {}
+
+.top__title {
+	margin-bottom: 21px;
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 0.32px;
+	color: $bigtext;
+}
+
+.top__item {
+	&:not(:last-child) {
+		margin-bottom: 11px;
+	}
+}
+
+.top__link {
+	font-size: 13px;
+	letter-spacing: 0.14px;
+	color: $accent;
+	transition: color 0.1s ease-in;
+
+	&:hover {
+		color: $bigtext;
+	}
+}

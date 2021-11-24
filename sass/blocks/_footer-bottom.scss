@@ -1,0 +1,38 @@
+.bottom {
+	padding: 50px 0;
+}
+
+.bottom__row {
+	@include flex(space-between, center);
+}
+
+.copyright {
+	display: flex;
+	align-items: center;
+
+	&>*:not(:last-child) {
+		margin-right: 12px;
+	}
+}
+
+.copyright__text {
+	font-size: 13px;
+	color: #92A0B3;
+
+}
+
+.copyright__link {
+	font-size: 13px;
+	color: #92A0B3;
+	transition: color 0.2s ease-in;
+
+	&:hover {
+		color: darken(#92A0B3, 20%);
+	}
+}
+
+.socials {
+	&>*:not(:last-child) {
+		margin-right: 16px;
+	}
+}

@@ -3,7 +3,6 @@
 	height: 500px;
 	padding-top: 151px;
 	position: relative;
-	margin-bottom: 400px;
 
 	&::before {
 		content: "";
@@ -11,7 +10,7 @@
 		width: 116px;
 		height: 278px;
 		top: -166px;
-		left: 0;
+		left: 18px;
 		background-image: url('./../img/before.svg');
 	}
 
@@ -24,8 +23,6 @@
 		right: 0;
 		background-image: url('./../img/after.svg');
 	}
-
-
 }
 
 .app__row {
