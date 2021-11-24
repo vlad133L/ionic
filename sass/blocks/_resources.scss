@@ -1,0 +1,86 @@
+.text {
+	@include flex(space-between, flex-end);
+	margin-bottom: 120px;
+}
+
+.resources__subtitle {
+	font-weight: 700;
+	font-size: 61px;
+	line-height: 1.05;
+	letter-spacing: 0.64px;
+	color: $bigtext;
+	max-width: 496px;
+}
+
+.visit {
+	max-width: 512px;
+}
+
+.visit__desc {
+	margin-bottom: 50px;
+	font-size: 16px;
+	line-height: 1.6;
+	letter-spacing: 0.16px;
+	color: $accent;
+}
+
+.visit__btn {
+	font-size: 14px;
+	letter-spacing: 0.32px;
+	color: $btntext;
+	transition: color 0.2s ease-in;
+	position: relative;
+	padding-right: 17px;
+
+	&:hover {
+		color: darken($btntext, 20%);
+	}
+
+	&:hover::after {
+		right: -5px;
+	}
+
+	&::after {
+		transition: right 0.2s ease-in;
+		content: "";
+		position: absolute;
+		top: 3px;
+		right: 0;
+		width: 13px;
+		height: 13px;
+		background-image: url('./../img/icons/arrow.svg');
+		background-repeat: no-repeat;
+	}
+}
+
+.res {
+	@include flex(space-between, flex-start);
+}
+
+.res__item {
+	max-width: 256px;
+
+}
+
+.res__pic {
+	margin-bottom: 47px;
+	height: 192px;
+	@include flex(center, center);
+	background: #F6F8FC;
+	border-radius: 16px;
+}
+
+.res__title {
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: 0.2px;
+	color: $bigtext;
+	margin-bottom: 20px;
+}
+
+.res__desc {
+	font-size: 16px;
+	line-height: 1.8;
+	letter-spacing: 0.16px;
+	color: $accent;
+}

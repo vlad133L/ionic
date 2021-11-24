@@ -745,4 +745,113 @@ h6 {
   background-repeat: no-repeat;
 }
 
+.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 120px;
+}
+
+.resources__subtitle {
+  font-weight: 700;
+  font-size: 61px;
+  line-height: 1.05;
+  letter-spacing: 0.64px;
+  color: #03060B;
+  max-width: 496px;
+}
+
+.visit {
+  max-width: 512px;
+}
+
+.visit__desc {
+  margin-bottom: 50px;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.16px;
+  color: #445B78;
+}
+
+.visit__btn {
+  font-size: 14px;
+  letter-spacing: 0.32px;
+  color: #3880FF;
+  -webkit-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
+  position: relative;
+  padding-right: 17px;
+}
+.visit__btn:hover {
+  color: #004cd1;
+}
+.visit__btn:hover::after {
+  right: -5px;
+}
+.visit__btn::after {
+  -webkit-transition: right 0.2s ease-in;
+  transition: right 0.2s ease-in;
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 0;
+  width: 13px;
+  height: 13px;
+  background-image: url("./../img/icons/arrow.svg");
+  background-repeat: no-repeat;
+}
+
+.res {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.res__item {
+  max-width: 256px;
+}
+
+.res__pic {
+  margin-bottom: 47px;
+  height: 192px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #F6F8FC;
+  border-radius: 16px;
+}
+
+.res__title {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  color: #03060B;
+  margin-bottom: 20px;
+}
+
+.res__desc {
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.16px;
+  color: #445B78;
+}
+
 /*# sourceMappingURL=main.css.map */
