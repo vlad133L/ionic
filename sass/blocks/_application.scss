@@ -1,0 +1,107 @@
+.app {
+	background: linear-gradient(to left, #E8F5FF 50%, #425D8D 50%);
+	height: 500px;
+	padding-top: 151px;
+	position: relative;
+	margin-bottom: 400px;
+
+	&::before {
+		content: "";
+		position: absolute;
+		width: 116px;
+		height: 278px;
+		top: -166px;
+		left: 0;
+		background-image: url('./../img/before.svg');
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 160px;
+		height: 300px;
+		bottom: -110px;
+		right: 0;
+		background-image: url('./../img/after.svg');
+	}
+
+
+}
+
+.app__row {
+	@include flex(center, center);
+}
+
+.text-app__desc {
+	font-size: 48px;
+	line-height: 1.12;
+	color: $white;
+	max-width: 275px;
+	margin-right: 241px;
+}
+
+.btns-app {
+	background: #E8F5FF;
+}
+
+.btns-app__row {
+	@include flex(flex-start, center);
+}
+
+.btn-apps--1 {
+	margin-right: 32px;
+	background-color: $btn;
+	border-radius: 1000px;
+	font-weight: 700;
+	font-size: 14px;
+	color: $white;
+	height: 25px;
+	line-height: 25px;
+	padding: 0 29px 0 20px;
+	position: relative;
+	transition: background-color 0.2s ease-in;
+
+	&:hover {
+		background-color: darken($btn, 15%);
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		width: 13px;
+		height: 13px;
+		top: 10px;
+		right: 11px;
+		background-image: url('./../img/icons/arrowstart.svg');
+		background-repeat: no-repeat;
+	}
+}
+
+.btn-apps--2 {
+	font-weight: 700;
+	font-size: 16px;
+	color: $btntext;
+	position: relative;
+	transition: color 0.2s ease-in;
+	padding-right: 16px;
+
+	&:hover::after {
+		right: -6px;
+	}
+
+	&:hover {
+		color: darken($btntext, 15%);
+	}
+
+	&::after {
+		transition: right 0.2s ease-in;
+		content: "";
+		position: absolute;
+		width: 13px;
+		height: 13px;
+		top: 6px;
+		right: -2px;
+		background-image: url('./../img/icons/arrow.svg');
+		background-repeat: no-repeat;
+	}
+}
