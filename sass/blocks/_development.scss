@@ -3,14 +3,27 @@
 }
 
 .dev__row {
-	@include flex(space-between, center);
+	@include flex(space-between, flex-start);
 }
 
 .dev__item {
+	&:not(:last-child) {
+		margin-right: 98px;
+	}
+}
+
+.dev__item-content {
 	max-width: 320px;
+	display: flex;
+	flex-direction: column;
+	flex: 0 1 auto;
+
+
 }
 
 .dev__pic {
+	width: 67px;
+	height: 67px;
 	margin-bottom: 31px;
 }
 

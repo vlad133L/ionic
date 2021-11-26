@@ -1,4 +1,4 @@
-.text {
+.text-res {
 	@include flex(space-between, flex-end);
 	margin-bottom: 120px;
 }
@@ -62,7 +62,7 @@
 }
 
 .res__item {
-	max-width: 256px;
+	flex: 0 1 23.5%;
 
 }
 

@@ -35,6 +35,7 @@
 								<li class="signin__item"><a href="#!" class="signin__ebook">Featured Ebook</a></li>
 								<li class="signin__item"><a href="#!" class="signin__link">Sign in</a></li>
 								<li class="signin__item"><a href="#!" class="signin__start">Start Free</a></li>
+							</ul>
 						</nav>
 					</div>
 				</div>
@@ -78,24 +79,30 @@
 				<div class="container">
 					<div class="dev__row">
 						<div class="dev__item">
-							<img class="dev__pic" src="./img/dev/item1.svg" alt="Truly native" >
-							<h3 class="dev__title">Truly native</h3>
-							<p class="dev__desc">Access the full Native SDKs on each platform, and powerful pre-built solutions for authentication and secure storage.</p>
+							<div class="dev__item-content">
+								<img class="dev__pic" src="./img/dev/item1.svg" alt="Truly native" >
+								<h3 class="dev__title">Truly native</h3>
+								<p class="dev__desc">Access the full Native SDKs on each platform, and powerful pre-built solutions for authentication and secure storage.</p>
+							</div>
 						</div>
 						<div class="dev__item">
-							<img class="dev__pic" src="./img/dev/item2.svg" alt="Truly cross-platform" >
-							<h3 class="dev__title">Truly cross-platform</h3>
-							<p class="dev__desc">Slash your development time and costs with a platform that lets you build once and deploy anywhere.</p>
+							<div class="dev__item-content">
+								<img class="dev__pic" src="./img/dev/item2.svg" alt="Truly cross-platform" >
+								<h3 class="dev__title">Truly cross-platform</h3>
+								<p class="dev__desc">Slash your development time and costs with a platform that lets you build once and deploy anywhere.</p>
+							</div>
 						</div>
 						<div class="dev__item">
-							<img class="dev__pic" src="./img/dev/item3.svg" alt="Powered by the Web" >
-							<h3 class="dev__title">Powered by the Web</h3>
-							<p class="dev__desc">If you know HTML, CSS, and JavaScript, you already know how to build stunning mobile apps with Ionic.</p>
+							<div class="dev__item-content">
+								<img class="dev__pic" src="./img/dev/item3.svg" alt="Powered by the Web" >
+								<h3 class="dev__title">Powered by the Web</h3>
+								<p class="dev__desc">If you know HTML, CSS, and JavaScript, you already know how to build stunning mobile apps with Ionic.</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="partners">
+			<div class="partners">
 				<div class="container">
 					<ul class="partners__list">
 						<li class="partners__item"><img class="partners__pic" src="./img/partners/prt1.svg" alt="HR BLOCK"></li>
@@ -107,7 +114,7 @@
 						<li class="partners__item"><img class="partners__pic" src="./img/partners/prt7.svg" alt="General Energetic"></li>
 					</ul>
 				</div>
-			</section>
+			</div>
 			<section class="approach">
 				<div class="container">
 					<div class="approach__text text">
@@ -119,19 +126,25 @@
 					</div>
 					<div class="approach__items">
 						<div class="approach__item">
-							<img class="approach__pic" src="./img/approach/apr1.svg" alt="Build">
-							<h3 class="approach__title">Build</h3>
-							<p class="approach__desc">Leverage the power of the web to build and develop better critical apps faster with your existing web talent.</p>
+							<div class="approach__item-content">
+								<img class="approach__item-pic" src="./img/approach/apr1.svg" alt="Build">
+								<h3 class="approach__item-title">Build</h3>
+								<p class="approach__item-desc">Leverage the power of the web to build and develop better critical apps faster with your existing web talent.</p>
+							</div>
 						</div>
 						<div class="approach__item">
-							<img class="approach__pic" src="./img/approach/apr2.svg" alt="Secure">
-							<h3 class="approach__title">Secure</h3>
-							<p class="approach__desc">Enjoy open source benefits with the security and peace of mind from enterprise grade support and reliability.</p>
+							<div class="approach__item-content">
+								<img class="approach__item-pic" src="./img/approach/apr2.svg" alt="Secure">
+								<h3 class="approach__item-title">Secure</h3>
+								<p class="approach__item-desc">Enjoy open source benefits with the security and peace of mind from enterprise grade support and reliability.</p>
+							</div>
 						</div>
 						<div class="approach__item">
-							<img class="approach__pic" src="./img/approach/apr3.svg" alt="Deliver">
-							<h3 class="approach__title">Deliver</h3>
-							<p class="approach__desc">Publish your apps with ease, deliver them continuously, and deploy live updates in minutes.</p>
+							<div class="approach__item-content">
+								<img class="approach__item-pic" src="./img/approach/apr3.svg" alt="Deliver">
+								<h3 class="approach__item-title">Deliver</h3>
+								<p class="approach__item-desc">Publish your apps with ease, deliver them continuously, and deploy live updates in minutes.</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -162,11 +175,14 @@
 					</div>
 				</div>
 			</section>
-			<section class="ebook">
+			<div class="ebook">
 				<div class="container">
 					<div class="ebook__row">
 						<div class="ebook__pic">
-							<img src="./img/ebook.jpg" alt="Ebook">
+							<picture>
+								<source type="image/webp" srcset="./img/ebook.webp">
+								<img src="./img/ebook.jpg" alt="Ebook">
+							</picture>
 						</div>
 						<div class="ebook__read">
 							<p class="ebook__desc"><span>Get the facts you need to make the right decision.</span> We wrote a guide on everything you need to know.</p>
@@ -174,10 +190,10 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
 			<section class="resources">
 				<div class="container">
-					<div class="resources__text text">
+					<div class="resources__text text-res">
 						<div class="resources__titles">
 							<h2 class="resources__title title">Resources</h2>
 							<h3 class="resources__subtitle">A deep dive into the Ionic stack.</h3>
@@ -214,7 +230,7 @@
 			<section class="application app">
 				<div class="container">
 					<div class="app__row">
-						<p class="text-app__desc">Get up and running with Ionic quickly.</p>
+						<h3 class="text-app__desc">Get up and running with Ionic quickly.</h3>
 						<div class="btns-app__row">
 							<a class="btn-apps--1" href="#!">Get a free demo</a>
 							<a class="btn-apps--2" href="#!" >Talk to sales</a>
@@ -229,7 +245,9 @@
 					<div class="top__row">
 						<img class="logo" src="./img/logo.svg" alt="Ionic">
 						<ul class="top__list">
-							<h4 class="top__title">The Platform</h4>
+							<li class="top__item">
+								<h4 class="top__title">The Platform</h4>
+							</li>
 							<li class="top__item"><a href="#!" class="top__link">Overview</a></li>
 							<li class="top__item"><a href="#!" class="top__link">Build</a></li>
 							<li class="top__item"><a href="#!" class="top__link">Secure</a></li>
@@ -237,7 +255,9 @@
 							<li class="top__item"><a href="#!" class="top__link">Why Ionic?</a></li>
 						</ul>
 						<ul class="top__list">
-							<h4 class="top__title">Products</h4>
+							<li class="top__item">
+								<h4 class="top__title">Products</h4>
+							</li>
 							<li class="top__item"><a href="#!" class="top__link">Framework</a></li>
 							<li class="top__item"><a href="#!" class="top__link">Capacitor</a></li>
 							<li class="top__item"><a href="#!" class="top__link">Appflow</a></li>
@@ -246,7 +266,9 @@
 							<li class="top__item"><a href="#!" class="top__link">Auth Connect</a></li>
 						</ul>
 						<ul class="top__list">
-							<h4 class="top__title">Resources</h4>
+							<li class="top__item">
+								<h4 class="top__title">Resources</h4>
+							</li>
 							<li class="top__item"><a href="#!" class="top__link">Resource Center</a></li>
 							<li class="top__item"><a href="#!" class="top__link">Blog</a></li>
 							<li class="top__item"><a href="#!" class="top__link">Articles</a></li>
@@ -255,7 +277,9 @@
 							<li class="top__item"><a href="#!" class="top__link">Videos</a></li>
 						</ul>
 						<ul class="top__list">
-							<h4 class="top__title">Company</h4>
+							<li class="top__item">
+								<h4 class="top__title">Company</h4>
+							</li>
 							<li class="top__item"><a href="#!" class="top__link">About us</a></li>
 							<li class="top__item"><a href="#!" class="top__link">Customers</a></li>
 							<li class="top__item"><a href="#!" class="top__link">Contact</a></li>
@@ -263,7 +287,9 @@
 							<li class="top__item"><a href="#!" class="top__link">Privacy</a></li>
 						</ul>
 						<ul class="top__list">
-							<h4 class="top__title">Support</h4>
+							<li class="top__item">
+								<h4 class="top__title">Support</h4>
+							</li>
 							<li class="top__item"><a href="#!" class="top__link">Help Center</a></li>
 							<li class="top__item"><a href="#!" class="top__link">Partners</a></li>
 							<li class="top__item"><a href="#!" class="top__link">Advisory</a></li>

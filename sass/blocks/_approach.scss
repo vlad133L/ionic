@@ -40,13 +40,20 @@
 	background: #F6F8FC;
 	border-radius: 16px;
 	padding: 40px 39px 36px 32px;
+
+	&-content {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
-.approach__pic {
+.approach__item-pic {
 	margin-bottom: 63px;
+	width: 80px;
+	height: 80px;
 }
 
-.approach__title {
+.approach__item-title {
 	margin-bottom: 18px;
 	font-weight: 700;
 	font-size: 20px;
@@ -54,7 +61,7 @@
 	color: $bigtext;
 }
 
-.approach__desc {
+.approach__item-desc {
 	font-size: 16px;
 	line-height: 1.6;
 	letter-spacing: 0.16px;
