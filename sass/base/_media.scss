@@ -47,12 +47,13 @@
 			}
 		}
 	}
-}
 
-@media (max-width:992px) {
 	.mobile-nav-button {
 		display: block;
 	}
+}
+
+@media (max-width:992px) {
 
 	.register {
 		&__row {
@@ -296,6 +297,10 @@
 				margin-right: auto;
 			}
 		}
+	}
+
+	.mobile-nav-button {
+		top: 108px;
 	}
 }
 

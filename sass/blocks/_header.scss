@@ -86,7 +86,6 @@
 		letter-spacing: 1.6px;
 		text-transform: uppercase;
 		color: #CDDFFF;
-		margin-right: 12px;
 		transition: color 0.2s ease-in;
 
 		&:hover {
@@ -132,19 +131,6 @@
 	}
 }
 
-
-// .header.fix {
-// 	background-color: lighten($red, 20%);
-// 	transition: background-color 0.2s ease-in;
-// 	position: fixed;
-// 	width: 100%;
-// 	left: 0;
-// 	z-index: 100;
-// 	top: 0;
-// }
-
-// .header.hidden {
-// 	display: none;
-// 	visibility: none;
-// 	opacity: 0;
-// }
+.ebook-item {
+	margin-right: 12px;
+}

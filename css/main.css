@@ -236,7 +236,6 @@ h6 {
   letter-spacing: 1.6px;
   text-transform: uppercase;
   color: #CDDFFF;
-  margin-right: 12px;
   -webkit-transition: color 0.2s ease-in;
   transition: color 0.2s ease-in;
 }
@@ -276,6 +275,10 @@ h6 {
   height: 13px;
   background-image: url("./../img/icons/arrowstart.svg");
   background-repeat: no-repeat;
+}
+
+.ebook-item {
+  margin-right: 12px;
 }
 
 .getstart {
@@ -1145,10 +1148,12 @@ source {
   height: 30px;
   position: fixed;
   right: 20px;
-  top: 67px;
+  top: 82px;
   background-color: transparent;
   cursor: pointer;
   z-index: 999;
+  visibility: visible;
+  opacity: 1;
 }
 .mobile-nav-button__icon {
   display: block;
@@ -1172,6 +1177,11 @@ source {
 .mobile-nav-button__icon::before {
   right: 0;
   top: 8px;
+}
+
+.mobile-nav-button.hidden {
+  visibility: hidden;
+  opacity: 0;
 }
 
 .mobile-nav-button__icon.active {
@@ -1229,12 +1239,12 @@ source {
   .res__item:nth-child(n+3) {
     margin-top: 25px;
   }
-}
-@media (max-width: 992px) {
+
   .mobile-nav-button {
     display: block;
   }
-
+}
+@media (max-width: 992px) {
   .register__row {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1485,6 +1495,10 @@ source {
   .top .top__list:nth-child(6) {
     margin-top: 30px;
     margin-right: auto;
+  }
+
+  .mobile-nav-button {
+    top: 108px;
   }
 }
 @media (max-width: 576px) {
