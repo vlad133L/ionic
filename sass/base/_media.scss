@@ -50,6 +50,10 @@
 }
 
 @media (max-width:992px) {
+	.mobile-nav-button {
+		display: block;
+	}
+
 	.register {
 		&__row {
 			justify-content: space-between;

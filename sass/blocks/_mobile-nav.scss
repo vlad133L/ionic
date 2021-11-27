@@ -1,0 +1,101 @@
+// Menu
+.mobile-nav {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 299;
+	background-color: $white;
+	top: 0;
+	left: 0;
+	padding: 70px 15px;
+}
+
+.mobile-nav.active {
+	display: block;
+}
+
+.nav-menu {
+	.nav__link {
+		font-size: 20px;
+	}
+}
+
+.nav-menu__list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.nav-menu__item {
+	margin-bottom: 20px;
+}
+
+.signin-menu__item {
+	&:not(:last-child) {
+		margin-bottom: 20px;
+	}
+}
+
+
+
+
+
+
+// Button
+
+.mobile-nav-button {
+	display: none;
+	width: 40px;
+	height: 30px;
+	position: fixed;
+	right: 20px;
+	top: 67px;
+	background-color: transparent;
+	cursor: pointer;
+	z-index: 999;
+
+	&__icon {
+		display: block;
+		width: 40px;
+		height: 4px;
+		background-color: $black;
+		position: relative;
+
+		&::after,
+		&::before {
+			content: "";
+			position: absolute;
+			width: 40px;
+			height: 4px;
+			background-color: $black;
+			transition: transform 0.15s ease-in, top 0.15s ease-in 0.15s, -webkit-transform 0.15s ease-in;
+		}
+
+		&::after {
+			right: 0;
+			top: -8px;
+		}
+
+		&::before {
+			right: 0;
+			top: 8px;
+		}
+	}
+}
+
+.mobile-nav-button__icon.active {
+	background-color: transparent;
+
+	&::after {
+		transform: rotate(45deg);
+		top: 0;
+		transition: top 0.15s linear, transform 0.15s ease-in 0.15s, -webkit-transform 0.15s ease-in 0.15s;
+	}
+
+	&::before {
+		transform: rotate(-45deg);
+		top: 0;
+		transition: top 0.15s linear, transform 0.15s ease-in 0.15s, -webkit-transform 0.15s ease-in 0.15s;
+	}
+}
